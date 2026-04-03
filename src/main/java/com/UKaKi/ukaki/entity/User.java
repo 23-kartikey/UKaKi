@@ -26,12 +26,10 @@ public class User implements UserDetails{
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private final long id;
+    private long id;
 
     private final String username;
     private final String password;
-    private final String name;
-    private final String title;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities(){
