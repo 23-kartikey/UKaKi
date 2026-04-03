@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>UKaKi | Home</title>
+    <link rel="stylesheet" th:href="@{/styles/style.css}">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">UKaKi</div>
+        <ul class="nav-links">
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+        <!-- LEFT SIDE (TEXT) -->
+        <div class="hero-text">
+            <h1>UKaKi</h1>
+            <p>Just a test page</p>
+            <a th:href="@{/login}" class="btn">Crisp</a>
+        </div>
+
+        <!-- RIGHT SIDE (IMAGE) -->
+        <div class="hero-image">
+            <img th:src="@{/images/drake.webp}" alt="Owl Logo">
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>📝 Create Notes</h3>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 UKaKi. All fights reserved.</p>
+        <br />
+        <p>Never duck a fade</p>
+    </footer>
+
+</body>
+</html>
