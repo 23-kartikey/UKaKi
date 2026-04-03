@@ -1,1 +1,1 @@
-Since I am seasoned enough to call myself a programmer now, I am going to go ahead and build something for me and my siblings- the most precious people I have in my life
+Since I am seasoned enough to call myself a programmer now, I am going to go ahead and build something for me and my siblings- the most precious people I have in my life.
