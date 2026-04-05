@@ -3,86 +3,103 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive;
+}
+
+/* BODY WITH IMAGE BACKGROUND */
+body {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+        url('/images/luffyDrawing.jpg') center/cover no-repeat;
+    color: #333;
 }
 
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 20px 40px;
     align-items: center;
-    background-color: #1e293b;
-    padding: 15px 30px;
-    color: white;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: bold;
-    background-color: #000000;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
+.nav-btn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #ff6b6b;
     color: white;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #38bdf8;
+.nav-btn:hover {
+    transform: scale(1.1);
 }
 
 /* HERO */
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+/* CENTER CARD */
+.hero-card {
+    background: rgba(255,255,255,0.8);
+    padding: 40px;
+    border-radius: 25px;
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to right, #0f172a, #1e293b);
-    color: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
+/* TITLE */
+.hero-card h1 {
+    font-size: 60px;
+    color: #ff4d4d;
 }
 
-.hero p {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
+/* TEXT */
+.hero-card p {
+    margin: 15px 0;
+    font-size: 18px;
 }
 
+/* BUTTON */
 .btn {
+    display: inline-block;
+    margin-top: 10px;
     padding: 10px 20px;
-    background-color: #38bdf8;
-    color: black;
+    border-radius: 20px;
+    background: #ff6b6b;
+    color: white;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #0ea5e9;
+    transform: scale(1.1);
 }
 
 /* FEATURES */
 .features {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 50px 20px;
+    gap: 20px;
+    padding: 30px;
 }
 
+/* FEATURE CARDS */
 .feature-card {
-    background: #f1f5f9;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    text-align: center;
+    background: rgba(255,255,255,0.85);
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     transition: 0.3s;
 }
 
@@ -94,36 +111,5 @@
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e293b;
-    color: white;
-}
-
-/* HERO LAYOUT */
-.hero {
-    padding: 80px 40px;
-    background: linear-gradient(to right, #0f172a, #1e293b);
-    color: white;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-/* TEXT SIDE */
-.hero-text {
-    max-width: 500px;
-}
-
-.hero-text h1 {
-    font-size: 4rem;
-    margin-bottom: 15px;
-}
-
-/* IMAGE SIDE */
-.hero-image img {
-    width: 350px;
-    max-width: 100%;
+    font-size: 14px;
 }
