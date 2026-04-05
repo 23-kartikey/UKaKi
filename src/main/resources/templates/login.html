@@ -5,24 +5,67 @@
     
     <head>
         <title>UKaKi</title>
+        <link rel="stylesheet" th:href="@{/styles/login.css}">
     </head>
 
-    <body>
-        <h1>Login</h1>
-        <img th:src="@{/images/login.png}" />
-        <div th:if="${param.error}">
-            Unable to login!
-        </div>
-        <p>Click <a th:href="@{/list}">here</a> to see the list of people who can login</p>
+<body>
 
-        <form method="POST" th:action="@{/login}" id="formLogin">
-            <label for="username">Username: </label>
-            <input type="text" name="username" id="username" /><br />
-            <label for="password">Password: </label>
-            <input type="password" name="password" id="password" /><br />
-            
-            <input type="submit" value="Login" />
-        </form>
-    </body>
+    <div class="login-wrapper">
+
+        <div class="login-card">
+
+            <h1>UKaKi</h1>
+            <p class="tagline">welcome back, pirates⚓</p>
+
+            <div th:if="${param.error}" class="error-box">
+                wrong crew details 👀
+            </div>
+
+            <form method="POST" th:action="@{/login}">
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+
+                <button type="submit">Enter</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+    <!-- <body>
+    <div class="main-container">
+
+        <div class="info-panel">
+            <h1>UKaKi</h1>
+            <p>Kingslayers and Usurpers</p>
+
+            <p class="link-text">
+                Click <a th:href="@{/list}">here</a> to see users
+            </p>
+        </div>
+
+        <div class="login-card">
+
+            <h2>Login</h2>
+
+            <img th:src="@{/images/login.png}" />
+
+            <div th:if="${param.error}" class="error-box">
+                Invalid username or password
+            </div>
+
+            <form method="POST" th:action="@{/login}">
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+
+                <button type="submit">Login</button>
+            </form>
+
+        </div>
+
+    </div>
+</body> -->
 
 </html>
